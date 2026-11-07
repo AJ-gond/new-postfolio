@@ -1,0 +1,458 @@
+/* =========================
+   WORK HEADER
+========================= */
+
+.work-header {
+    width: 100%;
+    min-height: 80px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    align-items: center;
+
+    padding: 0 7vw;
+
+    background: var(--warm-ivory);
+}
+
+
+/* Logo */
+
+.work-logo-div {
+    display: flex;
+    align-items: center;
+}
+
+.work-logo {
+    text-decoration: none;
+
+    color: var(--deep-slate);
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+    letter-spacing: .28em;
+}
+
+
+/* Navigation */
+
+.work-navigation {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 3vw;
+}
+
+.work-navigation a {
+    text-decoration: none;
+
+    color: var(--deep-slate);
+
+    font-family: var(--body-font);
+
+    font-size: .9rem;
+
+    transition: .3s ease;
+}
+
+.work-navigation a:hover,
+.work-navigation .active {
+    color: var(--deep-teal);
+}
+
+
+/* Talk */
+
+.work-talk-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* =========================
+   PROJECT HERO
+========================= */
+
+.projects-hero {
+    width: 100%;
+
+    min-height: 330px;
+
+    margin: 0;
+
+    padding: 70px 8vw;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(32, 42, 46, .92),
+            rgba(32, 42, 46, .25)
+        ),
+        url("imageSource/mountain.webp");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.projects-hero-content {
+    color: var(--warm-white);
+}
+
+.section-label {
+    display: inline-block;
+
+    padding: 6px 16px;
+
+    border: 1px solid rgba(32, 42, 46, .12);
+
+    border-radius: 50px;
+
+    font-size: .65rem;
+
+    letter-spacing: .18em;
+
+    color: var(--deep-slate);
+
+    background: rgba(255, 253, 248, .55);
+}
+
+.projects-hero .section-label {
+    color: var(--warm-white);
+
+    border-color: rgba(255,255,255,.2);
+
+    background: rgba(255,255,255,.08);
+}
+
+.projects-hero h1 {
+    margin-top: 20px;
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(3rem, 5vw, 5.5rem);
+
+    line-height: .95;
+
+    font-weight: 400;
+}
+
+.projects-hero p {
+    margin-top: 25px;
+
+    font-size: 1rem;
+
+    opacity: .85;
+}
+
+
+/* =========================
+   PROJECT SECTION
+========================= */
+
+.projects-section {
+    padding: 100px 8vw;
+}
+
+.projects-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    margin-bottom: 55px;
+}
+
+.projects-top h2 {
+    margin-top: 20px;
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(2.5rem, 4vw, 4rem);
+
+    line-height: .95;
+
+    font-weight: 400;
+
+    color: var(--deep-slate);
+}
+
+.projects-intro {
+    width: 30%;
+}
+
+.projects-intro p {
+    color: #626966;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   PROJECT GRID
+========================= */
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 50px 35px;
+}
+
+
+/* Card */
+
+.project-card {
+    background: var(--warm-white);
+
+    border: 1px solid rgba(32, 42, 46, .08);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 35px rgba(32, 42, 46, .06);
+
+    transition: .35s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 22px 45px rgba(32, 42, 46, .11);
+}
+
+
+/* Image */
+
+.project-image {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: .5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.04);
+}
+
+
+/* Content */
+
+.project-content {
+    position: relative;
+
+    padding: 28px 30px 30px;
+}
+
+.project-number {
+    position: absolute;
+
+    top: 28px;
+    right: 30px;
+
+    font-size: .75rem;
+
+    color: var(--muted-teal);
+
+    letter-spacing: .1em;
+}
+
+.project-content h3 {
+    font-family: var(--heading-font);
+
+    font-size: 2rem;
+
+    font-weight: 400;
+
+    color: var(--deep-slate);
+}
+
+.project-content p {
+    margin-top: 12px;
+
+    max-width: 90%;
+
+    color: #626966;
+
+    line-height: 1.6;
+}
+
+
+/* Technology */
+
+.project-tech {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.project-tech span {
+    padding: 6px 12px;
+
+    border-radius: 50px;
+
+    background: var(--soft-sage-ivory);
+
+    color: var(--deep-slate);
+
+    font-size: .7rem;
+}
+
+
+/* Links */
+
+.project-links {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.project-links a {
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    border-radius: 50px;
+
+    font-size: .8rem;
+
+    color: var(--deep-slate);
+
+    border: 1px solid rgba(32, 42, 46, .15);
+
+    transition: .3s ease;
+}
+
+.project-links a:first-child {
+    color: var(--warm-white);
+
+    background: var(--deep-teal);
+
+    border-color: var(--deep-teal);
+}
+
+.project-links a:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.work-cta {
+    text-align: center;
+
+    padding: 110px 20px;
+
+    background: var(--deep-slate);
+
+    color: var(--warm-white);
+}
+
+.work-cta .section-label {
+    color: var(--warm-white);
+
+    border-color: rgba(255,255,255,.2);
+
+    background: rgba(255,255,255,.06);
+}
+
+.work-cta h2 {
+    margin-top: 25px;
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    line-height: .95;
+
+    font-weight: 400;
+}
+
+.work-cta p {
+    margin: 25px 0 30px;
+
+    opacity: .75;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.work-footer {
+    min-height: 90px;
+
+    padding: 0 8vw;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: var(--warm-ivory);
+
+    color: var(--deep-slate);
+}
+
+.footer-logo {
+    letter-spacing: .25em;
+
+    font-size: .8rem;
+
+    font-weight: 600;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+.footer-links a {
+    text-decoration: none;
+
+    color: var(--deep-slate);
+
+    font-size: .8rem;
+}
+
+.work-footer p {
+    font-size: .7rem;
+
+    color: #6c716e;
+}

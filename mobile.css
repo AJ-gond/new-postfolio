@@ -1,0 +1,303 @@
+/* *{
+    border: 1px solid red;
+} */
+.hero-section{
+    min-height: auto;
+        display: block;
+        padding:  0px 0px;
+        background: none;
+}
+.main-header{
+     min-height: 100vw;
+        display: flex;
+        flex-direction: column;
+
+        background-image: url("imageSource/ChatGPT Image Sep 19, 2026, 12_34_42 PM.png");
+        background-size: 170% auto;
+        background-position: 90% center;
+        background-position-y: 0%;
+        background-repeat: no-repeat;
+
+        position: relative;
+}
+ 
+.hero-section .Talk-btn-div{
+    display: none;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.logo-div{
+   min-height: 2vh;
+}
+.logo{
+    font-size: 1rem;
+}
+.menu-Section{
+    justify-content: space-between;
+  padding: 0px 20px;
+}
+.hero-heading-section{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 20px;
+}
+.line-text-container{
+margin: 0px;
+width: 100%;
+order: 1;
+display: flex;
+align-items: center;
+justify-content: left;
+}
+.hero-heading{
+    order: 2;
+    margin: 0px;
+   justify-content: left;
+   width: 100%; 
+}
+.heading{
+    line-height: 3rem;   
+}
+.paragraph-div{
+    margin: 0px;
+    order: 3;
+   min-height: auto;
+   width: 100%;
+}
+.paragraph-div br{
+ display: none;
+}
+.hero-btn-section{
+  order: 4;
+  margin: 0px;
+  width: 100%;
+}
+.CV-btn{
+   padding: 10px 20px;  
+}
+
+   /* About Section */
+
+.aboutme-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100vw;
+     margin: 20px 0px;
+    padding: 0px 20px;
+}
+.section-heading{
+     width: 100%;    /* esko vw me change krna code pura hone ke baad  */
+}
+.aboutme-container .discription br{
+    display: none;
+}
+.image-section{
+    width: 100%;
+}
+.image-moto{
+    width: 100%;
+    line-height: 2rem;
+}
+.tomorrow{
+   margin-left: 0px; 
+}
+
+ /* about - Project detail Section  */
+
+
+.experience-box{
+ margin: 0px 17px; 
+
+}
+
+
+       /* Skill and Tool */
+
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+     margin: 20px 0px;
+    padding: 0px 20px;
+    gap: 15px;
+}
+
+ .skill-box{
+    gap:10px;   
+ }
+ .skill-moto{
+    white-space: nowrap;
+ }
+ .skill-moto br{
+  display: none;
+ }
+  .skill-moto p{
+    font-size: 1.2rem;
+  }
+ .skill-moto .skill-moto-first{
+    margin-left: 0px;
+    font-size: 1.2rem;
+ }
+   .skill-moto .skill-moto-second{
+    margin-left: 0px;
+   }
+.skill-moto div{
+    width: 50vw;
+}
+
+      /* project section */
+
+.featured-work{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 20px 0px;
+    padding: 0px 20px;
+    gap: 15px;
+}
+.work-intro h2 br{
+display: none;
+}
+.work-intro p{
+    line-height: 4rem;
+}
+.view-project-btn{
+   
+      background: linear-gradient(
+    135deg,
+    #285B58 0%,
+    #1F4E4B 100%
+  );
+
+  color: var(--warm-white);
+  border: none;
+  border-radius: 50px;
+  padding: 8px 20px;
+  
+
+  box-shadow:
+    0 8px 20px rgba(32, 42, 46, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    
+}
+      /*All project box section */
+
+.projects{
+    margin-top: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-height: 10vh;
+}
+.project-box{
+   min-width: 300px;
+   min-height: 300px;
+}
+.project-box img{
+    height: 70%;
+    width: 90%;
+}
+.project-box p{
+    height: auto;
+}
+      .project-btn{
+        display: none;
+      }
+   
+   
+      /* mountain Section */
+
+
+   .mountain-container{
+    width: 100vw;
+    height: 30vh;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    padding-left: 20px;
+   }
+   .mountain-heading{
+    padding: 0px;
+    width: 100%;
+   }
+   .second-logo{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 20px;
+   }
+   .mountain-moto{
+    min-width: 100%;
+
+   }
+   .mountain-moto div{
+     margin-top: 0.2rem;
+   }
+   .mountain-logo-div{
+    width: 100%;
+    text-align: end;
+   }
+   .mountain-logo-div .logo{
+    padding-right: 25px;
+   }
+  
+
+/*  Connect Section  */
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 20px 0px;
+    padding: 0px 20px;
+    gap: 15px;
+}
+.contact-container .Talk-btn-div .btn{
+    
+  order: 1;
+}
+ .email-linkedin-container{
+    height: 10vh;
+    width: 100%;
+    order: 2;
+ }
+ .email-detail h4{
+    line-height: 0.7rem;
+ }
+
+    /* Footer Section */
+
+    .footer-container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    gap: 5px;
+    }
+
+    
+    .footer-logo{
+   padding-left: 10px;
+   order: 1;
+}
+.footer-moto{
+    order: 2;
+    
+}
+.footer-socialmedia-link{
+    order: 3;
+    flex-direction: column;
+    gap: 5px;
+}
+.link-box{
+width: 100%;
+    padding-left: 0px;
+}
+.link-box img{
+    height: 90%;
+    width: 100%;
+}
